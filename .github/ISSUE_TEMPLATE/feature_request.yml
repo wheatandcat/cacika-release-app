@@ -1,0 +1,49 @@
+name: 要望・フィードバック
+description: 欲しい機能や、使っていて気になったことを送る
+title: "[Feedback] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        フィードバックありがとうございます。すべてに対応できるとは限りませんが、確認します。
+
+        > [!WARNING]
+        > このリポジトリは公開されています。**社外に出せないリポジトリ名・チーム名・メンバー名**は書かないでください。
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 困っていること
+      description: どんな場面で不便を感じたかを書いてください。機能そのものより、こちらのほうが検討の役に立ちます。
+      placeholder: 四半期のレポートを作るたびに、期間を手で指定し直すのが手間になっている
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: こうなってほしい
+      description: 思いついている案があれば書いてください。なければ空欄で構いません。
+      placeholder: よく使う期間をプリセットとして保存できると嬉しい
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: いまはどうしていますか
+      description: 代わりの方法で対処しているなら教えてください。
+
+  - type: input
+    id: version
+    attributes:
+      label: cacika のバージョン
+      description: アプリメニューの「about cacika」で確認できます。
+      placeholder: "1.2"
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 確認
+      options:
+        - label: 同じ内容の Issue がないか検索した
+          required: true

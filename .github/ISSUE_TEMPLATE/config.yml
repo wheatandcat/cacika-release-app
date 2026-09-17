@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 使い方を調べる
+    url: https://www.cacika.net/docs/
+    about: セットアップ手順、config.yaml の書き方、レポートの見方はドキュメントにまとまっています。
+  - name: 購入・支払い・デバイスの解除
+    url: https://polar.sh/unicorn-llc/portal
+    about: 領収書の発行や認証済みデバイスの解除は、購入時のメールアドレスで顧客ポータルにログインして操作してください。
+  - name: セキュリティ上の問題を報告する
+    url: https://github.com/wheatandcat/cacika-release-app/security/advisories/new
+    about: 脆弱性は公開の Issue ではなく、こちらから非公開で報告してください。

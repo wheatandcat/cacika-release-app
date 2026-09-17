@@ -1,0 +1,90 @@
+name: バグ報告
+description: cacika の不具合を報告する
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        不具合の報告ありがとうございます。再現できると修正が早くなるので、わかる範囲で埋めてください。
+
+        > [!WARNING]
+        > このリポジトリは公開されています。**GitHub の Personal Access Token やライセンスキー**、**社外に出せないリポジトリ名・メンバー名**は書かないでください（`repo-a` のように置き換えてください）。
+        >
+        > セキュリティ上の問題は、この Issue ではなく [非公開の報告フォーム](https://github.com/wheatandcat/cacika-release-app/security/advisories/new) から連絡してください。
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 何が起きましたか
+      description: 起きたことを一言で書いてください。
+      placeholder: レポートを出力すると、メンバーの集計が 0 件になる
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: どう操作したら起きるかを順番に書いてください。
+      placeholder: |
+        1. メニューバーの cacika をクリック
+        2. 「レポート出力」を開く
+        3. 期間を「今月」にして出力
+        4. 生成された HTML を開く
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待していた動作
+      placeholder: メンバーごとの PR 数が表示される
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: cacika のバージョン
+      description: アプリメニューの「about cacika」で確認できます。
+      placeholder: "1.2"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: macOS のバージョン
+      description: 「このMacについて」で確認できます。
+      placeholder: "macOS 15.5"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 実行ログ・スクリーンショット
+      description: |
+        データ取得やレポート出力の失敗であれば、アプリの実行ログを貼ってください。
+        画面の問題であればスクリーンショットを添付してください（この欄にドラッグ&ドロップできます）。
+        **貼り付ける前に、トークンやリポジトリ名が含まれていないか確認してください。**
+      render: text
+
+  - type: textarea
+    id: context
+    attributes:
+      label: 補足
+      description: 集計対象のリポジトリ数、いつから起きているかなど、参考になりそうなことがあれば書いてください。
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 確認
+      options:
+        - label: 最新版で再現することを確認した
+          required: true
+        - label: 同じ内容の Issue がないか検索した
+          required: true
+        - label: トークン・ライセンスキーなどの秘密情報を含んでいない
+          required: true
