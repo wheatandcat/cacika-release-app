@@ -28,9 +28,6 @@ cacika は macOS で動く GitHub の集計ツールです。指定したリポ�
 
 なお、ここで数えられるのはアウトプットの量だけで、その成果や生産性を測るものではありません。詳しくは公式サイトの [注意書き](https://www.cacika.net/#honesty) を読んでください。
 
-<p align="center">
-  <img src="https://www.cacika.net/images/app-main.png" alt="cacika のメイン画面" width="720">
-</p>
 
 ## ダウンロード
 
@@ -78,7 +75,3 @@ cacika は macOS で動く GitHub の集計ツールです。指定したリポ�
 - 個人で開発・運用しているため、返信までに数日いただくことがあります
 - 修正の対象は原則として最新版のみです
 - アプリのソースは非公開のため、Pull Request は受け付けていません
-
-## 変更履歴
-
-[Releases](https://github.com/wheatandcat/cacika-release-app/releases) に各バージョンの変更内容を記載しています。
